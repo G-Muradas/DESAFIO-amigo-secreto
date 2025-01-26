@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #41613d;
     --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-tertiary: #b5a18e;
+    --color-button: #f16a35;
+    --color-button-hover: #c65723;
+    --color-text: #524539;
     --color-white: #FFFFFF;
 }
 
@@ -31,12 +31,19 @@ body {
 }
 
 /* Banner */
+
 .header-banner {
     flex: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 6vh 0 0;
+    gap: 8vw;
+}
+
+.main-image {
+    width: 30vw;
+    border-radius:100% 100% 0 0 
 }
 
 /* Seção de entrada */
@@ -159,4 +166,21 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+
+@media (max-width: 560px) {
+    .main-image {
+        width: 0;
+    }
+    .header-banner {
+        flex: 15%;
+        gap: 0
+    }
+    .input-section {
+        flex: 85%;
+    }
+    .button-draw {
+        margin: 5%
+    }
 }
